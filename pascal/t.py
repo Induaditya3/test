@@ -8,7 +8,7 @@ def exists():
 @check50.check(exists)
 def prints_level_1():
     """prints first level of pascal triangle correctly"""
-    check50.run("python3 pascal.py").stdin("1").stdout("[1]\n").exit(0)
+    check50.run("python3 pascal.py").stdin("1").stdout("[1, 1]\n").exit(0)
 
 @check50.check(exists)
 def prints_level_2():

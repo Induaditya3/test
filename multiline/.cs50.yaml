@@ -1,0 +1,9 @@
+check50:
+  checks:
+    multi line:
+      -run: python3 multi.py
+      stdout: | # expect 1\n2\n3\n
+        1
+        2
+        3
+      exit 0

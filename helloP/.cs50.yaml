@@ -3,4 +3,14 @@ check50:
     hello world:
       - run: python3 hello.py
         stdout: Hello, world!
+        
+    output name in separate lines:
+      - run: python3 hello.py
+        stdout: Hello, world!
+        stdin:
+          - Aditya # insert first name
+          - Raj # insert second name
+        stdout:
+          - Aditya # check output first name
+          - Raj # check output second name
         exit: 0
